@@ -10,4 +10,4 @@ export * from './errors/request-validation-error';
 export * from './middlewares/current-user';
 export * from './middlewares/error-handler';
 export * from './middlewares/require-auth';
-export * from './middlewares/validate-email-pwd-request';
+export * from './middlewares/validate-request';
