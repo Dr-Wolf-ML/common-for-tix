@@ -12,7 +12,7 @@ export const errorHandler = (
         res.status(err.statusCode).send({ errors: err.serialiseErrors() });
     }
 
-    //! not a CustomError ?! Let's log it out and inspect it...
+    //! This is not a CustomError: let's log it out and inspect it...
     console.error('Error not handled in CustomError: ', err);
 
     res.status(400).send({
