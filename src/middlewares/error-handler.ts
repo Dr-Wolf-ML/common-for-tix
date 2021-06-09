@@ -13,7 +13,8 @@ export const errorHandler = (
     }
 
     //! This is not a CustomError: let's log it out and inspect it...
-    console.error('Error not handled in CustomError: ', err);
+    //? ...polutes the test runner.  Consider removing it.
+    // console.error('Error not handled in CustomError: ', err);
 
     res.status(400).send({
         errors: [{ message: err.message }],
