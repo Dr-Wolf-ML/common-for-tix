@@ -10,9 +10,9 @@
     "scripts": {
         "clean": "del ./build/*",
         "build": "npm run clean && tsc",
-        "pub": "git add . && git commit -m \"Automatic Patch Update via script execution\" && npm version patch && npm run build && npm publish",
-        "pub-minor": "git add . && git commit -m \"Automatic Minor Update via script execution\" && npm version minor && npm run build && npm publish",
-        "pub-major": "git add . && git commit -m \"Automatic Major Update via script execution\" && npm version major && npm run build && npm publish"
+        "pub": "git add . && git commit -m \"Automatic Patch Update via script execution\" && git push && npm version patch && npm run build && npm publish",
+        "pub-minor": "git add . && git commit -m \"Automatic Minor Update via script execution\" && git push && npm version minor && npm run build && npm publish",
+        "pub-major": "git add . && git commit -m \"Automatic Major Update via script execution\" && git push && npm version major && npm run build && npm publish"
     },
     "keywords": [],
     "author": "",
