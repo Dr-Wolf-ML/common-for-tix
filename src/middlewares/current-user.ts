@@ -2,9 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
 interface UserPayload {
+    id: string;
     email: string;
-    password: string;
-    id?: string;
 }
 
 declare global {
