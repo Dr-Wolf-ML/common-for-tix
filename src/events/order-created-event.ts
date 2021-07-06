@@ -8,7 +8,7 @@ export interface OrderCreatedEvent {
         version: number;
         status: OrderStatus; //! YAGNI
         userId: string;
-        expiresAt: string;
+        expiresAt: any;
         ticket: {
             id: string;
             price: number;
