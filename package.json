@@ -1,6 +1,6 @@
 {
     "name": "@dr-wolf-at-npm/common-for-tix",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
