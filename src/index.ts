@@ -15,13 +15,15 @@ export * from './middlewares/validate-request';
 // ~/events
 export * from './events/listener';
 export * from './events/publisher';
-export * from './events/ticket-created-event';
-export * from './events/ticket-updated-event';
+
+export * from './events/expiration-complete-event';
 export * from './events/order-created-event';
 export * from './events/order-cancelled-event';
-export * from './events/expiration-complete-event';
+export * from './events/payment-created-event';
+export * from './events/ticket-created-event';
+export * from './events/ticket-updated-event';
 
 // ~/events/types
 export * from './events/types/order-status';
-export * from './events/types/subjects';
 export * from './events/types/queue-group-names';
+export * from './events/types/subjects';
