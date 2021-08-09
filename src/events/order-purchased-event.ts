@@ -5,5 +5,6 @@ export interface OrderPurchasedEvent {
     data: {
         orderId: string;
         ticketId: string;
+        wasPurchased: string;
     };
 }
